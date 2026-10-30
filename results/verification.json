@@ -1,0 +1,47 @@
+{
+  "verified_utc": "2026-10-29T09:55:12.433613+00:00",
+  "benchmark_checks": [
+    {
+      "model": "tinycd",
+      "pairs": 2048,
+      "metrics": {
+        "precision": 92.65958499983198,
+        "recall": 89.52587853518675,
+        "f1": 91.06578089004631,
+        "iou": 83.59703831734296,
+        "oa": 99.10512715578079
+      },
+      "counts_consistent": true,
+      "checkpoint_sha256_verified": true
+    },
+    {
+      "model": "bit",
+      "pairs": 2048,
+      "metrics": {
+        "precision": 90.33028540137758,
+        "recall": 89.55610930698259,
+        "f1": 89.94153144546559,
+        "iou": 81.72159092046533,
+        "oa": 98.97958189249039
+      },
+      "counts_consistent": true,
+      "checkpoint_sha256_verified": true
+    },
+    {
+      "model": "changeformer",
+      "pairs": 2048,
+      "metrics": {
+        "precision": 92.05517000898276,
+        "recall": 88.80469839137778,
+        "f1": 90.40072494046362,
+        "iou": 82.48295884380276,
+        "oa": 99.03924241662025
+      },
+      "counts_consistent": true,
+      "checkpoint_sha256_verified": true
+    }
+  ],
+  "demo_pairs": 6,
+  "status": "passed",
+  "scope": "Saved evidence consistency, not a new full-dataset model evaluation"
+}

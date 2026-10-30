@@ -1,0 +1,34 @@
+# Environment
+.venv/
+.venv_win/
+.tools/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Regenerable large inference outputs (results/ and assets/demo/ are intended for version control)
+outputs/new/
+# USGS originals are covered by data/*; prepared pairs are local until reviewed for inclusion.
+# The small prepared Powai pair and saved predictions are bundled for fresh clones.
+.streamlit/secrets.toml
+.env
+.env.*
+.agents/
+.claude/
+.playwright-mcp/
+# BIT has no upstream redistribution licence: setup fetches pinned source instead.
+cdlib/models/vendor/bit/networks.py
+cdlib/models/vendor/bit/resnet.py
+cdlib/models/vendor/bit/help_funcs.py
+
+# Large artifacts (datasets, downloaded weights, checkpoints)
+data/*
+!data/.gitkeep
+weights/*
+!weights/.gitkeep
+outputs/checkpoints/*
+
+# Third-party repos cloned for reference
+third_party/
+outputs/checks/
+outputs/predictions/

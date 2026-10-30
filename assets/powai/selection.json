@@ -1,0 +1,176 @@
+{
+  "status": "awaiting_local_downloads",
+  "queried_utc": "2026-10-29T09:43:52.592130+00:00",
+  "center_lon_lat": [
+    72.9133,
+    19.1334
+  ],
+  "search_bbox": [
+    72.875,
+    19.095,
+    72.95,
+    19.17
+  ],
+  "selected": {
+    "before": {
+      "product_id": "LC08_L2SP_148047_20150210_20200909_02_T1",
+      "stac_id": "LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+      "acquired": "2015-02-10T05:33:51.932088Z",
+      "scene_cloud_percent": 0.01,
+      "platform": "LANDSAT_8",
+      "path": 148,
+      "row": 47,
+      "pixel_size_m": 30,
+      "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+      "assets": {
+        "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B4.TIF",
+        "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B3.TIF",
+        "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B2.TIF",
+        "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_QA_PIXEL.TIF",
+        "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_QA_RADSAT.TIF",
+        "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_MTL.json"
+      }
+    },
+    "after": {
+      "product_id": "LC08_L2SP_148047_20250205_20250208_02_T1",
+      "stac_id": "LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+      "acquired": "2025-02-05T05:34:04.251749Z",
+      "scene_cloud_percent": 0,
+      "platform": "LANDSAT_8",
+      "path": 148,
+      "row": 47,
+      "pixel_size_m": 30,
+      "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+      "assets": {
+        "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B4.TIF",
+        "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B3.TIF",
+        "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B2.TIF",
+        "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_QA_PIXEL.TIF",
+        "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_QA_RADSAT.TIF",
+        "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_MTL.json"
+      }
+    }
+  },
+  "candidates": {
+    "before": [
+      {
+        "product_id": "LC08_L2SP_148047_20150109_20200910_02_T1",
+        "stac_id": "LC08_L2SP_148047_20150109_20200910_02_T1_SR",
+        "acquired": "2015-01-09T05:34:03.166990Z",
+        "scene_cloud_percent": 0.01,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150109_20200910_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150109_20200910_02_T1/LC08_L2SP_148047_20150109_20200910_02_T1_MTL.json"
+        }
+      },
+      {
+        "product_id": "LC08_L2SP_148047_20150210_20200909_02_T1",
+        "stac_id": "LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+        "acquired": "2015-02-10T05:33:51.932088Z",
+        "scene_cloud_percent": 0.01,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2015/148/047/LC08_L2SP_148047_20150210_20200909_02_T1/LC08_L2SP_148047_20150210_20200909_02_T1_MTL.json"
+        }
+      }
+    ],
+    "after": [
+      {
+        "product_id": "LC08_L2SP_148047_20250104_20250111_02_T1",
+        "stac_id": "LC08_L2SP_148047_20250104_20250111_02_T1_SR",
+        "acquired": "2025-01-04T05:34:03.045478Z",
+        "scene_cloud_percent": 0,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250104_20250111_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250104_20250111_02_T1/LC08_L2SP_148047_20250104_20250111_02_T1_MTL.json"
+        }
+      },
+      {
+        "product_id": "LC08_L2SP_148047_20250205_20250208_02_T1",
+        "stac_id": "LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+        "acquired": "2025-02-05T05:34:04.251749Z",
+        "scene_cloud_percent": 0,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250205_20250208_02_T1/LC08_L2SP_148047_20250205_20250208_02_T1_MTL.json"
+        }
+      },
+      {
+        "product_id": "LC08_L2SP_148047_20250221_20250226_02_T1",
+        "stac_id": "LC08_L2SP_148047_20250221_20250226_02_T1_SR",
+        "acquired": "2025-02-21T05:33:56.275564Z",
+        "scene_cloud_percent": 0,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250221_20250226_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250221_20250226_02_T1/LC08_L2SP_148047_20250221_20250226_02_T1_MTL.json"
+        }
+      },
+      {
+        "product_id": "LC08_L2SP_148047_20250120_20250128_02_T1",
+        "stac_id": "LC08_L2SP_148047_20250120_20250128_02_T1_SR",
+        "acquired": "2025-01-20T05:34:02.465075Z",
+        "scene_cloud_percent": 1.23,
+        "platform": "LANDSAT_8",
+        "path": 148,
+        "row": 47,
+        "pixel_size_m": 30,
+        "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250120_20250128_02_T1_SR",
+        "assets": {
+          "red": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_SR_B4.TIF",
+          "green": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_SR_B3.TIF",
+          "blue": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_SR_B2.TIF",
+          "qa_pixel": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_QA_PIXEL.TIF",
+          "qa_radsat": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_QA_RADSAT.TIF",
+          "MTL.json": "https://landsatlook.usgs.gov/data/collection02/level-2/standard/oli-tirs/2025/148/047/LC08_L2SP_148047_20250120_20250128_02_T1/LC08_L2SP_148047_20250120_20250128_02_T1_MTL.json"
+        }
+      }
+    ]
+  },
+  "selection_rule": "Landsat 8 Tier 1, WRS 148/047; lowest scene cloud, then nearest 10 February",
+  "note": "Metadata only. Inspect local QA and alignment after download; scene cloud is not local cloud."
+}

@@ -1,0 +1,3 @@
+# Optional: only preparation of USGS GeoTIFFs and georeferenced export need Rasterio.
+# Install the main requirements.txt first. The app can display prepared PNG bundles without this extra.
+rasterio==1.4.4

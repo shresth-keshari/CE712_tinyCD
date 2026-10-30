@@ -1,0 +1,12 @@
+* text=auto
+*.sh text eol=lf
+streamlit text eol=lf
+python text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.png binary
+*.npz binary
+*.zip binary
+# Preserve the original byte-level provenance hash across Windows/Linux clones.
+assets/powai/pair/manifest.json -text

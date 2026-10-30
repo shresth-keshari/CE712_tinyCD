@@ -1,0 +1,75 @@
+{
+ "model": "tinycd",
+ "meta": {
+  "label": "TinyCD",
+  "paper_key": "TinyCD",
+  "desc": "TinyCD - our implementation, authors' released LEVIR-CD weights",
+  "weights_source": "github.com/AndreaCodegoni/Tiny_model_4_CD (pretrained_models/levir_best.pth)",
+  "sha256": "743645b87199c96bd0c3271ae5df6f0918b3f1d84618dfb9396843ca08ee4a3e"
+ },
+ "split": "test",
+ "pairs": 2048,
+ "threshold": 0.5,
+ "metrics": {
+  "precision": 92.65958499983198,
+  "recall": 89.52587853518675,
+  "f1": 91.06578089004631,
+  "iou": 83.59703831734296,
+  "oa": 99.10512715578079
+ },
+ "counts": {
+  "tp": 6121246,
+  "fp": 484920,
+  "fn": 716158,
+  "tn": 126895404
+ },
+ "objects": {
+  "objects": 8673,
+  "detected": 7732,
+  "object_recall_pct": 89.15023636573274,
+  "bins": [
+   {
+    "label": "< 100 px (< 25 m\u00b2)",
+    "n": 825,
+    "detected": 266,
+    "recall_pct": 32.24242424242424
+   },
+   {
+    "label": "100\u2013400 px (25\u2013100 m\u00b2)",
+    "n": 1282,
+    "detected": 1063,
+    "recall_pct": 82.91731669266771
+   },
+   {
+    "label": "400\u20131600 px (100\u2013400 m\u00b2)",
+    "n": 6058,
+    "detected": 5914,
+    "recall_pct": 97.62297788048862
+   },
+   {
+    "label": "> 1600 px (> 400 m\u00b2)",
+    "n": 508,
+    "detected": 489,
+    "recall_pct": 96.25984251968504
+   }
+  ],
+  "predicted_objects": 8614,
+  "hallucinated_objects": 658,
+  "hallucinated_pct": 7.638727652658463,
+  "false_alarm_pairs": 21,
+  "no_change_pairs": 1113,
+  "false_alarm_rate_pct": 1.8867924528301887
+ },
+ "eval_seconds": 48.41257405281067,
+ "batch": 8,
+ "environment": {
+  "generated": "2026-10-26T05:56:37+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.0+cu126",
+  "cuda": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "os": "Windows-11-10.0.26300-SP0"
+ }
+}

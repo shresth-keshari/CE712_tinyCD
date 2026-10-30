@@ -1,0 +1,102 @@
+{
+ "environment": {
+  "generated": "2026-10-26T06:02:05+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.0+cu126",
+  "cuda": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "input": "one pair of 3x256x256 images, batch 1",
+ "models": {
+  "tinycd": {
+   "model": "tinycd",
+   "params_total": 285128,
+   "params_used": 285128,
+   "params_unused": 0,
+   "gflops": 1.45556,
+   "flops_unsupported_ops": [
+    "aten::add_",
+    "aten::mul",
+    "aten::prelu",
+    "aten::sigmoid",
+    "aten::silu_"
+   ],
+   "latency_cpu_ms": {
+    "median": 194.355299999188,
+    "p25": 192.89119999984905,
+    "p75": 202.25015000050917,
+    "runs": 20
+   },
+   "cpu_threads": 8,
+   "latency_gpu_ms": {
+    "median": 24.15454999936628,
+    "p25": 23.08389999961946,
+    "p75": 26.300875000288215,
+    "runs": 100
+   },
+   "peak_gpu_mem_mib": 55.251953125
+  },
+  "bit": {
+   "model": "bit",
+   "params_total": 11943754,
+   "params_used": 3037026,
+   "params_unused": 8906728,
+   "gflops": 8.755980844,
+   "flops_unsupported_ops": [
+    "aten::abs",
+    "aten::add",
+    "aten::add_",
+    "aten::gelu",
+    "aten::max_pool2d",
+    "aten::mul",
+    "aten::mul_",
+    "aten::softmax",
+    "aten::sub"
+   ],
+   "latency_cpu_ms": {
+    "median": 266.33284999934403,
+    "p25": 256.886650000979,
+    "p75": 312.47130000065226,
+    "runs": 20
+   },
+   "cpu_threads": 8,
+   "latency_gpu_ms": {
+    "median": 32.27740000056656,
+    "p25": 30.40497499932826,
+    "p75": 34.68147500007035,
+    "runs": 100
+   },
+   "peak_gpu_mem_mib": 80.8173828125
+  },
+  "changeformer": {
+   "model": "changeformer",
+   "params_total": 41026674,
+   "params_used": 41026674,
+   "params_unused": 0,
+   "gflops": 138.796036608,
+   "flops_unsupported_ops": [
+    "aten::add",
+    "aten::gelu",
+    "aten::mul",
+    "aten::softmax"
+   ],
+   "latency_cpu_ms": {
+    "median": 2454.3979999998555,
+    "p25": 2430.8348249996925,
+    "p75": 2481.5178250005374,
+    "runs": 20
+   },
+   "cpu_threads": 8,
+   "latency_gpu_ms": {
+    "median": 103.57839999960561,
+    "p25": 97.87167500007854,
+    "p75": 107.51284999969357,
+    "runs": 100
+   },
+   "peak_gpu_mem_mib": 461.28125
+  }
+ }
+}

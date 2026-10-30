@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Run project scripts with the setup environment on Linux, macOS or Git Bash.
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+export PYTHONUTF8=1
+export OMP_NUM_THREADS="${OMP_NUM_THREADS:-4}"
+export MKL_NUM_THREADS="${MKL_NUM_THREADS:-4}"
+if [[ -f .venv/bin/python ]]; then
+  exec .venv/bin/python "$@"
+elif [[ -f .venv/Scripts/python.exe ]]; then
+  exec .venv/Scripts/python.exe "$@"
+else
+  printf '%s\n' 'Run bash setup.sh first.' >&2
+  exit 1
+fi

@@ -1,0 +1,75 @@
+{
+ "model": "changeformer",
+ "meta": {
+  "label": "ChangeFormer V6",
+  "paper_key": "ChangeFormer",
+  "desc": "ChangeFormer V6 (Bandara & Patel, IGARSS 2022) - official code and LEVIR-CD weights",
+  "weights_source": "github.com/wgcban/ChangeFormer release v0.1.0 (LEVIR-CD, embed_dim 256)",
+  "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+ },
+ "split": "test",
+ "pairs": 2048,
+ "threshold": 0.5,
+ "metrics": {
+  "precision": 92.05517000898276,
+  "recall": 88.80469839137778,
+  "f1": 90.40072494046362,
+  "iou": 82.48295884380276,
+  "oa": 99.03924241662025
+ },
+ "counts": {
+  "tp": 6071936,
+  "fp": 524039,
+  "fn": 765468,
+  "tn": 126856285
+ },
+ "objects": {
+  "objects": 8673,
+  "detected": 7691,
+  "object_recall_pct": 88.67750490026519,
+  "bins": [
+   {
+    "label": "< 100 px (< 25 m\u00b2)",
+    "n": 825,
+    "detected": 290,
+    "recall_pct": 35.15151515151515
+   },
+   {
+    "label": "100\u2013400 px (25\u2013100 m\u00b2)",
+    "n": 1282,
+    "detected": 1040,
+    "recall_pct": 81.1232449297972
+   },
+   {
+    "label": "400\u20131600 px (100\u2013400 m\u00b2)",
+    "n": 6058,
+    "detected": 5877,
+    "recall_pct": 97.0122152525586
+   },
+   {
+    "label": "> 1600 px (> 400 m\u00b2)",
+    "n": 508,
+    "detected": 484,
+    "recall_pct": 95.2755905511811
+   }
+  ],
+  "predicted_objects": 9175,
+  "hallucinated_objects": 867,
+  "hallucinated_pct": 9.449591280653951,
+  "false_alarm_pairs": 40,
+  "no_change_pairs": 1113,
+  "false_alarm_rate_pct": 3.5938903863432166
+ },
+ "eval_seconds": 164.75004386901855,
+ "batch": 4,
+ "environment": {
+  "generated": "2026-10-26T06:01:05+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.0+cu126",
+  "cuda": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "os": "Windows-11-10.0.26300-SP0"
+ }
+}

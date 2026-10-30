@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-10-29T09:55:04.221445+00:00",
+  "status": "Inference-only replication; 2,048 test pairs; threshold 0.5",
+  "replication": [
+    {
+      "label": "TinyCD",
+      "f1": 91.06578089004631,
+      "note": "Released weights, shared test protocol"
+    },
+    {
+      "label": "BIT",
+      "f1": 89.94153144546559,
+      "note": "Released weights, shared test protocol"
+    },
+    {
+      "label": "ChangeFormer V6",
+      "f1": 90.40072494046362,
+      "note": "Released weights, shared test protocol"
+    }
+  ],
+  "models": [
+    {
+      "id": "tinycd",
+      "model": "TinyCD",
+      "source": "downloaded checkpoint",
+      "precision": 92.65958499983198,
+      "recall": 89.52587853518675,
+      "f1": 91.06578089004631,
+      "iou": 83.59703831734296,
+      "oa": 99.10512715578079,
+      "params_used": 285128,
+      "latency_ms_bs1": 24.15454999936628
+    },
+    {
+      "id": "bit",
+      "model": "BIT",
+      "source": "downloaded checkpoint",
+      "precision": 90.33028540137758,
+      "recall": 89.55610930698259,
+      "f1": 89.94153144546559,
+      "iou": 81.72159092046533,
+      "oa": 98.97958189249039,
+      "params_used": 3037026,
+      "latency_ms_bs1": 32.27740000056656
+    },
+    {
+      "id": "changeformer",
+      "model": "ChangeFormer V6",
+      "source": "downloaded checkpoint",
+      "precision": 92.05517000898276,
+      "recall": 88.80469839137778,
+      "f1": 90.40072494046362,
+      "iou": 82.48295884380276,
+      "oa": 99.03924241662025,
+      "params_used": 41026674,
+      "latency_ms_bs1": 103.57839999960561
+    }
+  ],
+  "findings": [
+    {
+      "text": "TinyCD: 285,128 parameters and F1 91.07, versus paper F1 91.05."
+    },
+    {
+      "text": "BIT: F1 89.94 versus 89.31 reported; discrepancy remains unexplained."
+    },
+    {
+      "text": "ChangeFormer: F1 90.40, matching the reported result to two decimals."
+    },
+    {
+      "text": "The Streamlit app is the primary demonstration. Powai uses separate USGS inputs and makes no accuracy claim."
+    }
+  ]
+}

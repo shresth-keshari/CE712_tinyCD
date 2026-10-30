@@ -1,0 +1,75 @@
+{
+ "model": "bit",
+ "meta": {
+  "label": "BIT",
+  "paper_key": "BIT",
+  "desc": "BIT (Chen, Qi & Shi, IEEE TGRS 2021) - official code and LEVIR-CD weights",
+  "weights_source": "github.com/justchenhao/BIT_CD README (Google Drive), variant base_transformer_pos_s4_dd8_dedim8",
+  "sha256": "c159ba76143447f58c9f367ce8126a0014f2e4ba218cdb97cca173952c38cb3b"
+ },
+ "split": "test",
+ "pairs": 2048,
+ "threshold": 0.5,
+ "metrics": {
+  "precision": 90.33028540137758,
+  "recall": 89.55610930698259,
+  "f1": 89.94153144546559,
+  "iou": 81.72159092046533,
+  "oa": 98.97958189249039
+ },
+ "counts": {
+  "tp": 6123313,
+  "fp": 655491,
+  "fn": 714091,
+  "tn": 126724833
+ },
+ "objects": {
+  "objects": 8673,
+  "detected": 7670,
+  "object_recall_pct": 88.43537414965986,
+  "bins": [
+   {
+    "label": "< 100 px (< 25 m\u00b2)",
+    "n": 825,
+    "detected": 259,
+    "recall_pct": 31.393939393939398
+   },
+   {
+    "label": "100\u2013400 px (25\u2013100 m\u00b2)",
+    "n": 1282,
+    "detected": 1040,
+    "recall_pct": 81.1232449297972
+   },
+   {
+    "label": "400\u20131600 px (100\u2013400 m\u00b2)",
+    "n": 6058,
+    "detected": 5889,
+    "recall_pct": 97.21030042918454
+   },
+   {
+    "label": "> 1600 px (> 400 m\u00b2)",
+    "n": 508,
+    "detected": 482,
+    "recall_pct": 94.88188976377953
+   }
+  ],
+  "predicted_objects": 8327,
+  "hallucinated_objects": 667,
+  "hallucinated_pct": 8.010087666626637,
+  "false_alarm_pairs": 68,
+  "no_change_pairs": 1113,
+  "false_alarm_rate_pct": 6.109613656783468
+ },
+ "eval_seconds": 46.32890748977661,
+ "batch": 8,
+ "environment": {
+  "generated": "2026-10-26T05:57:39+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.0+cu126",
+  "cuda": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "os": "Windows-11-10.0.26300-SP0"
+ }
+}

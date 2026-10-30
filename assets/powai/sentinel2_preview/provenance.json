@@ -1,0 +1,50 @@
+{
+  "purpose": "Native-resolution visual inspection only; no inference or accuracy claim",
+  "generated_utc": "2026-10-29T17:04:20.155348+00:00",
+  "center_lon_lat": [
+    72.9133,
+    19.1334
+  ],
+  "pixel_size_m": 10,
+  "size": [
+    256,
+    256
+  ],
+  "width_km": 2.56,
+  "rendering": "Provider TCI; no local enhancement, resizing or super-resolution",
+  "quality": "Cloud-filtered catalog candidates; local SCL screening and quantitative alignment not performed",
+  "source": "Copernicus Sentinel-2 data, via Element 84 Earth Search / AWS Open Data",
+  "scenes": {
+    "before": {
+      "item_id": "S2A_43QBB_20170202_0_L2A",
+      "acquired": "2017-02-02T05:49:44.453000Z",
+      "cloud_percent": 0.012027,
+      "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/BB/2017/2/S2A_43QBB_20170202_0_L2A/TCI.tif",
+      "stac_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_43QBB_20170202_0_L2A",
+      "files": {
+        "before.tif": "4b3fed2ed96dc834e59aa75b284eb3edc4ebf2b8b95fcbdf1f13465a7ba50c19",
+        "before.png": "06970d7345e651e78c4c377fe457427f9bd7d7762a3c8b4869a044b5a3dad2c5"
+      }
+    },
+    "after": {
+      "item_id": "S2A_43QBB_20250121_0_L2A",
+      "acquired": "2025-01-21T05:53:39.660000Z",
+      "cloud_percent": 0.001466,
+      "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/BB/2025/1/S2A_43QBB_20250121_0_L2A/TCI.tif",
+      "stac_url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a/items/S2A_43QBB_20250121_0_L2A",
+      "files": {
+        "after.tif": "acc67ea8c9ef8fbb52cd9c6df33b21fa630b5506b20f846a79e4325b94e50619",
+        "after.png": "25aab7dc59681bb65ab042b731d31be536a9c077c21f95051814a6609619b632"
+      }
+    }
+  },
+  "crs": "EPSG:32643",
+  "transform": [
+    10.0,
+    0.0,
+    279230.0,
+    0.0,
+    -10.0,
+    2118180.0
+  ]
+}

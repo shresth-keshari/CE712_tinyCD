@@ -1,0 +1,34 @@
+name: Fresh clone installation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  setup-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-14]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    defaults:
+      run:
+        shell: bash
+    env:
+      OMP_NUM_THREADS: '4'
+      MKL_NUM_THREADS: '4'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: One-command installation (fixed demos, uploads and Powai)
+        run: bash setup.sh --demo-only
+      - name: Run tests in the installed environment
+        run: |
+          if [[ -f .venv/bin/python ]]; then PY=.venv/bin/python; else PY=.venv/Scripts/python.exe; fi
+          "$PY" -m pytest -q -p no:cacheprovider
+      - name: Check launcher
+        run: |
+          bash streamlit version
+          bash python scripts/smoke_server.py

@@ -1,0 +1,446 @@
+{
+  "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+  "pair_manifest_sha256": "342c726fd5f65d50a92197657221d5064179072e34fa631ec120997b5b4bc2cf",
+  "environment": {
+    "generated": "2026-10-29T16:53:16+00:00",
+    "python": "3.12.10",
+    "torch": "2.7.0+cu126",
+    "cuda": "12.6",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "os": "Windows-11-10.0.26300-SP0"
+  },
+  "threshold": 0.5,
+  "models": {
+    "tinycd": {
+      "model": "tinycd",
+      "checkpoint": {
+        "label": "TinyCD",
+        "paper_key": "TinyCD",
+        "desc": "TinyCD - our implementation, authors' released LEVIR-CD weights",
+        "weights_source": "github.com/AndreaCodegoni/Tiny_model_4_CD (pretrained_models/levir_best.pth)",
+        "sha256": "743645b87199c96bd0c3271ae5df6f0918b3f1d84618dfb9396843ca08ee4a3e"
+      },
+      "device": "cuda:0",
+      "seconds": 0.1563480999902822,
+      "pair": {
+        "schema_version": 1,
+        "status": "prepared",
+        "area": "IIT Bombay / Powai, Mumbai",
+        "generated_utc": "2026-10-29T16:52:43.186931+00:00",
+        "center_lon_lat": [
+          72.9133,
+          19.1334
+        ],
+        "size": [
+          256,
+          256
+        ],
+        "crs": "EPSG:32643",
+        "transform": [
+          30.0,
+          0.0,
+          276660.0,
+          0.0,
+          -30.0,
+          2120760.0
+        ],
+        "pixel_size_m": 30,
+        "scenes": [
+          {
+            "product_id": "LC08_L2SP_148047_20150210_20200909_02_T1",
+            "acquired": "2015-02-10",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.01",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+            "local_clear_percent": 99.8138427734375,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_MTL.json",
+                "sha256": "639ff006dc2d7c97f053758a54c7cf4384641dd301fffc687a7ee93225287d6e"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B4.TIF",
+                "sha256": "5b0113240bcc42f78684f7466fa3b2afeb4266828f6221b320aa1f00f6cfbf60"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B3.TIF",
+                "sha256": "a1e9677966c0057f698d9804f27cd5049cdfb183b1b02bb6d54d33df50773203"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B2.TIF",
+                "sha256": "14515d2a62b2bfb5d619aacef056a651745e96e06ee40c714a5cef9f0fec357f"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_PIXEL.TIF",
+                "sha256": "b3071d3f8a1b104168aba18d9ba7408055787f2ceef05d821dc02853ea33ea7c"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_RADSAT.TIF",
+                "sha256": "3f1cbc842e18625bdbf0cde6c74fe260d0723f8a70f0976943420440300f1e11"
+              }
+            }
+          },
+          {
+            "product_id": "LC08_L2SP_148047_20250205_20250208_02_T1",
+            "acquired": "2025-02-05",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.00",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+            "local_clear_percent": 99.98779296875,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_MTL.json",
+                "sha256": "df53b7fa4f6b361267eea5199ef9729ad989dbc982016e60ae780e1ab8bc3660"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B4.TIF",
+                "sha256": "2cc5a06cc4e09c8ca25c88417516e7ba7b846a30ac1452eefaa0cc3fe4bf12b7"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B3.TIF",
+                "sha256": "95a8ab0a692194ba466997b272a3c84030f0c65ae39c1e6b207253bb78e48f30"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B2.TIF",
+                "sha256": "5d01f01c4fb4fa5f1377f6f3d0f94aa7c8aa7b42a2d16656f8f237e511d95ecd"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_PIXEL.TIF",
+                "sha256": "9c52098d7bbee2f107b4f8bc46d3669f4b24ad177b2c44dcdb25771c72d47dc5"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_RADSAT.TIF",
+                "sha256": "46650604fb2501e78e9b920440e69cd75e7a19e3ded56b068aabe25aa3c38f72"
+              }
+            }
+          }
+        ],
+        "common_valid_percent": 99.8016357421875,
+        "ground_truth": null,
+        "processing": {
+          "rgb_bands": [
+            4,
+            3,
+            2
+          ],
+          "reflectance_scale": 2.75e-05,
+          "reflectance_offset": -0.2,
+          "stretch": [
+            0.0,
+            0.3
+          ],
+          "resampling": "RGB bilinear; QA nearest",
+          "qa": "QA_PIXEL bits 0-5 unset; QA_RADSAT=0",
+          "invalid_fill": "black on both dates; excluded from summaries",
+          "registration": "common geospatial grid; residual alignment requires visual review"
+        },
+        "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+        "files": {
+          "A.png": "6c0baf0ee155cee365b1932738a862b5fb0a51a8145126b701600e67f2f95830",
+          "B.png": "f8ea954b762af8cd89cb3f02d11202bcc1e5c30c8efc91a9716b46640e6f4d47",
+          "valid.png": "90c8fe2a92a5fce2ebdce185ae589f3bee2235ee9285aeaaddef725e3d8b4d5a"
+        }
+      },
+      "evidence": "exploratory inference; no ground truth",
+      "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+      "threshold": 0.5,
+      "valid_pixels": 65406,
+      "excluded_pixels": 130,
+      "predicted_changed_pixels": 0,
+      "predicted_changed_percent": 0.0,
+      "probability_sha256": "3ed7171eab4f0658d3a21b306313c02bb353dfd5644f551faa167c28fe0ec37c"
+    },
+    "bit": {
+      "model": "bit",
+      "checkpoint": {
+        "label": "BIT",
+        "paper_key": "BIT",
+        "desc": "BIT (Chen, Qi & Shi, IEEE TGRS 2021) - official code and LEVIR-CD weights",
+        "weights_source": "github.com/justchenhao/BIT_CD README (Google Drive), variant base_transformer_pos_s4_dd8_dedim8",
+        "sha256": "c159ba76143447f58c9f367ce8126a0014f2e4ba218cdb97cca173952c38cb3b"
+      },
+      "device": "cuda:0",
+      "seconds": 0.07438639999600127,
+      "pair": {
+        "schema_version": 1,
+        "status": "prepared",
+        "area": "IIT Bombay / Powai, Mumbai",
+        "generated_utc": "2026-10-29T16:52:43.186931+00:00",
+        "center_lon_lat": [
+          72.9133,
+          19.1334
+        ],
+        "size": [
+          256,
+          256
+        ],
+        "crs": "EPSG:32643",
+        "transform": [
+          30.0,
+          0.0,
+          276660.0,
+          0.0,
+          -30.0,
+          2120760.0
+        ],
+        "pixel_size_m": 30,
+        "scenes": [
+          {
+            "product_id": "LC08_L2SP_148047_20150210_20200909_02_T1",
+            "acquired": "2015-02-10",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.01",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+            "local_clear_percent": 99.8138427734375,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_MTL.json",
+                "sha256": "639ff006dc2d7c97f053758a54c7cf4384641dd301fffc687a7ee93225287d6e"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B4.TIF",
+                "sha256": "5b0113240bcc42f78684f7466fa3b2afeb4266828f6221b320aa1f00f6cfbf60"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B3.TIF",
+                "sha256": "a1e9677966c0057f698d9804f27cd5049cdfb183b1b02bb6d54d33df50773203"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B2.TIF",
+                "sha256": "14515d2a62b2bfb5d619aacef056a651745e96e06ee40c714a5cef9f0fec357f"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_PIXEL.TIF",
+                "sha256": "b3071d3f8a1b104168aba18d9ba7408055787f2ceef05d821dc02853ea33ea7c"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_RADSAT.TIF",
+                "sha256": "3f1cbc842e18625bdbf0cde6c74fe260d0723f8a70f0976943420440300f1e11"
+              }
+            }
+          },
+          {
+            "product_id": "LC08_L2SP_148047_20250205_20250208_02_T1",
+            "acquired": "2025-02-05",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.00",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+            "local_clear_percent": 99.98779296875,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_MTL.json",
+                "sha256": "df53b7fa4f6b361267eea5199ef9729ad989dbc982016e60ae780e1ab8bc3660"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B4.TIF",
+                "sha256": "2cc5a06cc4e09c8ca25c88417516e7ba7b846a30ac1452eefaa0cc3fe4bf12b7"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B3.TIF",
+                "sha256": "95a8ab0a692194ba466997b272a3c84030f0c65ae39c1e6b207253bb78e48f30"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B2.TIF",
+                "sha256": "5d01f01c4fb4fa5f1377f6f3d0f94aa7c8aa7b42a2d16656f8f237e511d95ecd"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_PIXEL.TIF",
+                "sha256": "9c52098d7bbee2f107b4f8bc46d3669f4b24ad177b2c44dcdb25771c72d47dc5"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_RADSAT.TIF",
+                "sha256": "46650604fb2501e78e9b920440e69cd75e7a19e3ded56b068aabe25aa3c38f72"
+              }
+            }
+          }
+        ],
+        "common_valid_percent": 99.8016357421875,
+        "ground_truth": null,
+        "processing": {
+          "rgb_bands": [
+            4,
+            3,
+            2
+          ],
+          "reflectance_scale": 2.75e-05,
+          "reflectance_offset": -0.2,
+          "stretch": [
+            0.0,
+            0.3
+          ],
+          "resampling": "RGB bilinear; QA nearest",
+          "qa": "QA_PIXEL bits 0-5 unset; QA_RADSAT=0",
+          "invalid_fill": "black on both dates; excluded from summaries",
+          "registration": "common geospatial grid; residual alignment requires visual review"
+        },
+        "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+        "files": {
+          "A.png": "6c0baf0ee155cee365b1932738a862b5fb0a51a8145126b701600e67f2f95830",
+          "B.png": "f8ea954b762af8cd89cb3f02d11202bcc1e5c30c8efc91a9716b46640e6f4d47",
+          "valid.png": "90c8fe2a92a5fce2ebdce185ae589f3bee2235ee9285aeaaddef725e3d8b4d5a"
+        }
+      },
+      "evidence": "exploratory inference; no ground truth",
+      "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+      "threshold": 0.5,
+      "valid_pixels": 65406,
+      "excluded_pixels": 130,
+      "predicted_changed_pixels": 0,
+      "predicted_changed_percent": 0.0,
+      "probability_sha256": "e539df0adcd149f83c4e7867db72fc016b4d47a0d3fe0258e6dfecf12345e608"
+    },
+    "changeformer": {
+      "model": "changeformer",
+      "checkpoint": {
+        "label": "ChangeFormer V6",
+        "paper_key": "ChangeFormer",
+        "desc": "ChangeFormer V6 (Bandara & Patel, IGARSS 2022) - official code and LEVIR-CD weights",
+        "weights_source": "github.com/wgcban/ChangeFormer release v0.1.0 (LEVIR-CD, embed_dim 256)",
+        "sha256": "db0dd783c3c3f27d02f55f24fa8199d2b2b47c422c7f7bd2e4d96e2fa65d69f2"
+      },
+      "device": "cuda:0",
+      "seconds": 0.21010090003255755,
+      "pair": {
+        "schema_version": 1,
+        "status": "prepared",
+        "area": "IIT Bombay / Powai, Mumbai",
+        "generated_utc": "2026-10-29T16:52:43.186931+00:00",
+        "center_lon_lat": [
+          72.9133,
+          19.1334
+        ],
+        "size": [
+          256,
+          256
+        ],
+        "crs": "EPSG:32643",
+        "transform": [
+          30.0,
+          0.0,
+          276660.0,
+          0.0,
+          -30.0,
+          2120760.0
+        ],
+        "pixel_size_m": 30,
+        "scenes": [
+          {
+            "product_id": "LC08_L2SP_148047_20150210_20200909_02_T1",
+            "acquired": "2015-02-10",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.01",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20150210_20200909_02_T1_SR",
+            "local_clear_percent": 99.8138427734375,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_MTL.json",
+                "sha256": "639ff006dc2d7c97f053758a54c7cf4384641dd301fffc687a7ee93225287d6e"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B4.TIF",
+                "sha256": "5b0113240bcc42f78684f7466fa3b2afeb4266828f6221b320aa1f00f6cfbf60"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B3.TIF",
+                "sha256": "a1e9677966c0057f698d9804f27cd5049cdfb183b1b02bb6d54d33df50773203"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_SR_B2.TIF",
+                "sha256": "14515d2a62b2bfb5d619aacef056a651745e96e06ee40c714a5cef9f0fec357f"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_PIXEL.TIF",
+                "sha256": "b3071d3f8a1b104168aba18d9ba7408055787f2ceef05d821dc02853ea33ea7c"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20150210_20200909_02_T1_QA_RADSAT.TIF",
+                "sha256": "3f1cbc842e18625bdbf0cde6c74fe260d0723f8a70f0976943420440300f1e11"
+              }
+            }
+          },
+          {
+            "product_id": "LC08_L2SP_148047_20250205_20250208_02_T1",
+            "acquired": "2025-02-05",
+            "platform": "LANDSAT_8",
+            "scene_cloud_percent": "0.00",
+            "path": 148,
+            "row": 47,
+            "stac_url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items/LC08_L2SP_148047_20250205_20250208_02_T1_SR",
+            "local_clear_percent": 99.98779296875,
+            "files": {
+              "metadata": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_MTL.json",
+                "sha256": "df53b7fa4f6b361267eea5199ef9729ad989dbc982016e60ae780e1ab8bc3660"
+              },
+              "red": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B4.TIF",
+                "sha256": "2cc5a06cc4e09c8ca25c88417516e7ba7b846a30ac1452eefaa0cc3fe4bf12b7"
+              },
+              "green": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B3.TIF",
+                "sha256": "95a8ab0a692194ba466997b272a3c84030f0c65ae39c1e6b207253bb78e48f30"
+              },
+              "blue": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_SR_B2.TIF",
+                "sha256": "5d01f01c4fb4fa5f1377f6f3d0f94aa7c8aa7b42a2d16656f8f237e511d95ecd"
+              },
+              "qa_pixel": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_PIXEL.TIF",
+                "sha256": "9c52098d7bbee2f107b4f8bc46d3669f4b24ad177b2c44dcdb25771c72d47dc5"
+              },
+              "qa_radsat": {
+                "name": "LC08_L2SP_148047_20250205_20250208_02_T1_QA_RADSAT.TIF",
+                "sha256": "46650604fb2501e78e9b920440e69cd75e7a19e3ded56b068aabe25aa3c38f72"
+              }
+            }
+          }
+        ],
+        "common_valid_percent": 99.8016357421875,
+        "ground_truth": null,
+        "processing": {
+          "rgb_bands": [
+            4,
+            3,
+            2
+          ],
+          "reflectance_scale": 2.75e-05,
+          "reflectance_offset": -0.2,
+          "stretch": [
+            0.0,
+            0.3
+          ],
+          "resampling": "RGB bilinear; QA nearest",
+          "qa": "QA_PIXEL bits 0-5 unset; QA_RADSAT=0",
+          "invalid_fill": "black on both dates; excluded from summaries",
+          "registration": "common geospatial grid; residual alignment requires visual review"
+        },
+        "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+        "files": {
+          "A.png": "6c0baf0ee155cee365b1932738a862b5fb0a51a8145126b701600e67f2f95830",
+          "B.png": "f8ea954b762af8cd89cb3f02d11202bcc1e5c30c8efc91a9716b46640e6f4d47",
+          "valid.png": "90c8fe2a92a5fce2ebdce185ae589f3bee2235ee9285aeaaddef725e3d8b4d5a"
+        }
+      },
+      "evidence": "exploratory inference; no ground truth",
+      "disclaimer": "Exploratory inference on 30 m USGS Landsat imagery. The released models were developed for 0.5 m LEVIR-CD building imagery. Predicted responses are not verified building changes. No ground-truth mask is available; changed-pixel percentage is not accuracy.",
+      "threshold": 0.5,
+      "valid_pixels": 65406,
+      "excluded_pixels": 130,
+      "predicted_changed_pixels": 0,
+      "predicted_changed_percent": 0.0,
+      "probability_sha256": "f048c6f5d0c8a3c230c5df7214d77f70ede99a4ccb0364cbb62a1c7cff6067bb"
+    }
+  }
+}

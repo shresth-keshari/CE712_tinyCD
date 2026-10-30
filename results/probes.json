@@ -1,0 +1,65 @@
+{
+ "environment": {
+  "generated": "2026-10-26T06:04:08+00:00",
+  "python": "3.12.10",
+  "torch": "2.7.0+cu126",
+  "cuda": "12.6",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "os": "Windows-11-10.0.26300-SP0"
+ },
+ "split": "test",
+ "probes": {
+  "none": {
+   "description": "Unmodified released model",
+   "metrics": {
+    "precision": 92.65958499983198,
+    "recall": 89.52587853518675,
+    "f1": 91.06578089004631,
+    "iou": 83.59703831734296,
+    "oa": 99.10512715578079
+   }
+  },
+  "no_M64": {
+   "description": "Mask M64 replaced by 1",
+   "metrics": {
+    "precision": 75.22563324015074,
+    "recall": 90.44167932741725,
+    "f1": 82.13488217155414,
+    "iou": 69.68548768695287,
+    "oa": 97.99572080373764
+   }
+  },
+  "no_M128": {
+   "description": "Mask M128 replaced by 1",
+   "metrics": {
+    "precision": 88.23127273848215,
+    "recall": 92.09545026153201,
+    "f1": 90.12195923948454,
+    "iou": 82.01999108803709,
+    "oa": 98.97153452038765
+   }
+  },
+  "no_M256": {
+   "description": "Mask M256 replaced by 1",
+   "metrics": {
+    "precision": 0.2566666135990957,
+    "recall": 0.35368686712091313,
+    "f1": 0.2974656926714308,
+    "iou": 0.1489543904403594,
+    "oa": 87.9218727350235
+   }
+  },
+  "no_masks": {
+   "description": "All three masks replaced by 1",
+   "metrics": {
+    "precision": 0.21957035284216037,
+    "recall": 0.3130281609803955,
+    "f1": 0.25809949510635377,
+    "iou": 0.12921650112167143,
+    "oa": 87.67504766583443
+   }
+  }
+ }
+}

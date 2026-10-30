@@ -1,0 +1,176 @@
+[
+ {
+  "name": "test_102_9.png",
+  "dir": "test_102_9",
+  "title": "Large new development",
+  "rule": "GT change > 15%, highest TinyCD F1",
+  "models": {
+   "tinycd": {
+    "precision": 98.0467895925953,
+    "recall": 99.26215598022578,
+    "f1": 98.65072963261716,
+    "iou": 97.33738513855727,
+    "oa": 99.4384765625
+   },
+   "bit": {
+    "precision": 98.1105923548293,
+    "recall": 99.23264221943481,
+    "f1": 98.66842742379224,
+    "iou": 97.37185056472633,
+    "oa": 99.44610595703125
+   },
+   "changeformer": {
+    "precision": 98.78707196213298,
+    "recall": 98.55382572124253,
+    "f1": 98.67031099948291,
+    "iou": 97.37551942844645,
+    "oa": 99.45068359375
+   }
+  }
+ },
+ {
+  "name": "test_102_10.png",
+  "dir": "test_102_10",
+  "title": "A few new buildings",
+  "rule": "GT change 1-4%, highest TinyCD F1",
+  "models": {
+   "tinycd": {
+    "precision": 100.0,
+    "recall": 95.1954780970325,
+    "f1": 97.53861003861005,
+    "iou": 95.1954780970325,
+    "oa": 99.8443603515625
+   },
+   "bit": {
+    "precision": 98.56733524355302,
+    "recall": 97.22091380122468,
+    "f1": 97.88949490158882,
+    "iou": 95.86623316302834,
+    "oa": 99.86419677734375
+   },
+   "changeformer": {
+    "precision": 98.53358561967833,
+    "recall": 98.11587376354215,
+    "f1": 98.32428605145151,
+    "iou": 96.7038068709378,
+    "oa": 99.89166259765625
+   }
+  }
+ },
+ {
+  "name": "test_109_13.png",
+  "dir": "test_109_13",
+  "title": "Models disagree",
+  "rule": "GT change > 1%, largest F1 spread between the three models",
+  "models": {
+   "tinycd": {
+    "precision": 93.94736842105263,
+    "recall": 92.8478543563069,
+    "f1": 93.39437540876389,
+    "iou": 87.60736196319019,
+    "oa": 99.84588623046875
+   },
+   "bit": {
+    "precision": 100.0,
+    "recall": 26.137841352405722,
+    "f1": 41.44329896907216,
+    "iou": 26.137841352405722,
+    "oa": 99.13330078125
+   },
+   "changeformer": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 98.82659912109375
+   }
+  }
+ },
+ {
+  "name": "test_19_1.png",
+  "dir": "test_19_1",
+  "title": "TinyCD failure case",
+  "rule": "GT change > 2%, lowest TinyCD F1",
+  "models": {
+   "tinycd": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 97.7447509765625
+   },
+   "bit": {
+    "precision": 88.75119161105816,
+    "recall": 62.99052774018945,
+    "f1": 73.68421052631578,
+    "iou": 58.333333333333336,
+    "oa": 98.98529052734375
+   },
+   "changeformer": {
+    "precision": 92.7355278093076,
+    "recall": 55.27740189445196,
+    "f1": 69.26663840610428,
+    "iou": 52.983138780804154,
+    "oa": 98.89373779296875
+   }
+  }
+ },
+ {
+  "name": "test_100_1.png",
+  "dir": "test_100_1",
+  "title": "No change (clean)",
+  "rule": "No GT change, fewest changed pixels predicted by all models",
+  "models": {
+   "tinycd": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 100.0
+   },
+   "bit": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 100.0
+   },
+   "changeformer": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 100.0
+   }
+  }
+ },
+ {
+  "name": "test_19_3.png",
+  "dir": "test_19_3",
+  "title": "No change - TinyCD false alarm",
+  "rule": "No GT change, most pixels TinyCD predicts as change",
+  "models": {
+   "tinycd": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 98.6175537109375
+   },
+   "bit": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 99.39117431640625
+   },
+   "changeformer": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "iou": 0.0,
+    "oa": 100.0
+   }
+  }
+ }
+]

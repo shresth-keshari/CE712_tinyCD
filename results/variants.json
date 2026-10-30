@@ -1,0 +1,288 @@
+[
+ {
+  "id": "paper",
+  "description": "TinyCD as published (B4 slice, Mix, MAMB skips, PW-MLP classifier)",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 285128,
+  "paper_table": "Tables 3/4/6",
+  "paper_params": 285128,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.45556
+ },
+ {
+  "id": "sub_all",
+  "description": "Subtraction in skips and bottleneck",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "sub",
+   "fusion_bottleneck": "sub",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 282939,
+  "paper_table": "Table 6 / 7a",
+  "paper_params": 282939,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.43843872
+ },
+ {
+  "id": "sub_skips",
+  "description": "Subtraction in skips only (Mix in bottleneck)",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "sub",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 284004,
+  "paper_table": "Table 7a",
+  "paper_params": 284004,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.439700288
+ },
+ {
+  "id": "sub_bottleneck",
+  "description": "Subtraction in bottleneck only (Mix in skips)",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "mix",
+   "fusion_bottleneck": "sub",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 284063,
+  "paper_table": "Table 7a",
+  "paper_params": 284063,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.454298432
+ },
+ {
+  "id": "cat_all",
+  "description": "Concatenation + conv in skips and bottleneck",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "cat",
+   "fusion_bottleneck": "cat",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 368468,
+  "paper_table": "Table 6 / 7b",
+  "paper_params": 368468,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.755338048
+ },
+ {
+  "id": "cat_skips",
+  "description": "Concatenation + conv in skips only",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "cat",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 313028,
+  "paper_table": "Table 7b",
+  "paper_params": 313028,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.698567488
+ },
+ {
+  "id": "cat_bottleneck",
+  "description": "Concatenation + conv in bottleneck only",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "mix",
+   "fusion_bottleneck": "cat",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 340568,
+  "paper_table": "Table 7b",
+  "paper_params": 340568,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.51233056
+ },
+ {
+  "id": "no_classifier",
+  "description": "No final PW-MLP classifier (sliced w/o MLP)",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": false
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 282438,
+  "paper_table": "Table 4",
+  "paper_params": 282438,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.274942784
+ },
+ {
+  "id": "no_skip",
+  "description": "No MAMB skip masks",
+  "config": {
+   "backbone": "efficientnet_b4",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": false,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 56
+  },
+  "params": 282836,
+  "paper_table": "Table 5",
+  "paper_params": null,
+  "match": null,
+  "diff": null,
+  "gflops": 1.425478976
+ },
+ {
+  "id": "b0",
+  "description": "EfficientNet-B0 backbone",
+  "config": {
+   "backbone": "efficientnet_b0",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 16,
+   "c64": 24,
+   "c32": 40
+  },
+  "params": 79208,
+  "paper_table": "Table 9",
+  "paper_params": 79480,
+  "match": false,
+  "diff": -272,
+  "gflops": 0.70755392
+ },
+ {
+  "id": "b1",
+  "description": "EfficientNet-B1 backbone",
+  "config": {
+   "backbone": "efficientnet_b1",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 16,
+   "c64": 24,
+   "c32": 40
+  },
+  "params": 121820,
+  "paper_table": "Table 9",
+  "paper_params": 122092,
+  "match": false,
+  "diff": -272,
+  "gflops": 0.851058304
+ },
+ {
+  "id": "b2",
+  "description": "EfficientNet-B2 backbone",
+  "config": {
+   "backbone": "efficientnet_b2",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 16,
+   "c64": 24,
+   "c32": 48
+  },
+  "params": 147768,
+  "paper_table": "Table 9",
+  "paper_params": 148040,
+  "match": false,
+  "diff": -272,
+  "gflops": 0.896860032
+ },
+ {
+  "id": "b3",
+  "description": "EfficientNet-B3 backbone",
+  "config": {
+   "backbone": "efficientnet_b3",
+   "fusion": "mix",
+   "fusion_bottleneck": "mix",
+   "skip_masks": true,
+   "classifier": true
+  },
+  "channels": {
+   "c128": 24,
+   "c64": 32,
+   "c32": 48
+  },
+  "params": 178716,
+  "paper_table": "Table 9",
+  "paper_params": 178716,
+  "match": true,
+  "diff": 0,
+  "gflops": 1.164462592
+ }
+]

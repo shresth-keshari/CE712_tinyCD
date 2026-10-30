@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TinyCD replication and LEVIR-CD benchmark dashboard">
+  <title>TinyCD · Replication Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">CE712 · Change detection</p>
+      <h1>TinyCD <span>Replication Lab</span></h1>
+      <p class="lede">A reproducible comparison on one fixed LEVIR-CD test split—inference-only replication with released checkpoints, architecture checks and measured efficiency.</p>
+    </div>
+    <div class="status" id="status"><i></i><span>Loading verified results…</span></div>
+  </header>
+
+  <main>
+    <section class="replication" aria-labelledby="replication-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Primary claim</p><h2 id="replication-title">Did the paper replicate?</h2></div>
+        <p id="generated-at" class="muted"></p>
+      </div>
+      <div class="score-cards" id="replication-cards"></div>
+    </section>
+
+    <section aria-labelledby="benchmark-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Exact-split evaluation</p><h2 id="benchmark-title">Model benchmark</h2></div>
+        <div class="controls" role="group" aria-label="Model category filter">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="downloaded">Downloaded</button>
+        </div>
+      </div>
+      <div class="chart-shell">
+        <div class="chart-label"><span>F1 score</span><span>higher is better →</span></div>
+        <div id="f1-chart" class="bar-chart" aria-label="F1 score comparison"></div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Source</th><th>Precision</th><th>Recall</th><th>F1</th><th>IoU</th><th>Params</th><th>Latency</th></tr></thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="evidence-grid" aria-labelledby="evidence-title">
+      <div><p class="eyebrow">Interpretation</p><h2 id="evidence-title">Evidence, not just a leaderboard</h2></div>
+      <div id="findings" class="findings"></div>
+    </section>
+
+    <section class="method-note">
+      <p class="eyebrow">Evaluation contract</p>
+      <p>Every displayed local score uses the same 2,048 image pairs, positive-class pixel metrics and fixed preprocessing. The decision threshold is fixed at 0.5; there is no threshold fitting or model training. Published scores using another crop protocol are labelled as context and are not silently treated as head-to-head results.</p>
+    </section>
+  </main>
+
+  <footer><span>TinyCD reimplementation</span><span>256×256 LEVIR-CD · 7,120 / 1,024 / 2,048</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

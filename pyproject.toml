@@ -1,0 +1,9 @@
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.ruff]
+line-length = 120
+extend-exclude = ["cdlib/models/vendor", "third_party", "notebooks"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
